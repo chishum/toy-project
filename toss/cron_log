@@ -1,0 +1,10 @@
+[2025-09-01 19:00:00] 2025-09-01 [어쩔수가없다]: 정답 - 24, 82, 하나
+[2025-09-01 19:00:00] 2025-09-01 [토스뱅크 하나카드]: 정답 - 2, 120
+Traceback (most recent call last):
+  File "/Users/chishum/Works/pythonProjects/toy-project/toss.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+./tossLuckyQuiz.sh: line 1: cd: /Users/chishum/Works/pythonProjects/toy-project/toy-project/venv/bin: No such file or directory
+./tossLuckyQuiz.sh: line 2: activate: No such file or directory
+./tossLuckyQuiz.sh: line 1: cd: /Users/chishum/Works/pythonProjects/toy-project/toy-project/venv/bin: No such file or directory
+./tossLuckyQuiz.sh: line 2: activate: No such file or directory
