@@ -8,3 +8,5 @@ ModuleNotFoundError: No module named 'requests'
 ./tossLuckyQuiz.sh: line 2: activate: No such file or directory
 ./tossLuckyQuiz.sh: line 1: cd: /Users/chishum/Works/pythonProjects/toy-project/toy-project/venv/bin: No such file or directory
 ./tossLuckyQuiz.sh: line 2: activate: No such file or directory
+./tossLuckyQuiz.sh: line 1: cd: /Users/chishum/Works/pythonProjects/toy-project/toy-project/venv/bin: No such file or directory
+./tossLuckyQuiz.sh: line 2: activate: No such file or directory
