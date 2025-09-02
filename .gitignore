@@ -21,3 +21,6 @@ build/
 .env.local
 
 anon.session
+
+*.mp3
+*.log
