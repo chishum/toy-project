@@ -22,5 +22,8 @@ build/
 
 anon.session
 
+english/
+newsRoom/
+
 *.mp3
 *.log

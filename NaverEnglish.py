@@ -26,6 +26,7 @@ def init():
     trace(f"[{targetMm}/{targetDd}] 작업 시작")
 
     # 폴더 정리
+    if not os.path.exists(f"./english"): os.mkdir(f"./english")
     if not os.path.exists(f"./english/{targetMm}"): os.mkdir(f"./english/{targetMm}")
     if os.path.exists(f"./english/{targetMm}/{targetDd}"): shutil.rmtree(f"./english/{targetMm}/{targetDd}")
     os.mkdir(f"./english/{targetMm}/{targetDd}")

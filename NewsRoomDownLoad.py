@@ -74,6 +74,9 @@ if __name__ == '__main__':
     down_dd = res.json()["data"][0]['insertDate'][0:10]
     trace(res.json()["data"][0]['audioUrl'])
     os.chdir(f"/Users/chishum/Works/pythonProjects/toy-project")
+
+    if not os.path.exists(f"./newsRoom"): os.mkdir(f"./newsRoom")
+
     news_room_file = f"newsRoom/{down_dd}-뉴스룸.mp3"
     trace(news_room_file)
     download(res.json()["data"][0]['audioUrl'], news_room_file)
