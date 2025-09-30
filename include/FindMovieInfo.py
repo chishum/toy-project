@@ -3,7 +3,8 @@ from requests import get
 import os
 import urllib.request
 import urllib.parse
-import MySetting
+from Settings import MySetting
+
 
 def download_poster(url, file_name):
     os.chdir("/Users/chishum/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal/Attatchments")
