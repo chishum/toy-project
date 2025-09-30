@@ -1,0 +1,1 @@
+KMDB_SERVICE_KEY = ""

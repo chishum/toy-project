@@ -3,7 +3,7 @@ from requests import get
 import os
 import urllib.request
 import urllib.parse
-from Settings import MySetting
+from settings import MySetting
 
 
 def download_poster(url, file_name):
