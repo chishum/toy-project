@@ -24,6 +24,9 @@ anon.session
 
 english/
 newsRoom/
+dayone/
 
 *.mp3
 *.log
+
+include/MySetting.py

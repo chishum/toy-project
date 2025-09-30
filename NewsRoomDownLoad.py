@@ -73,7 +73,7 @@ if __name__ == '__main__':
     res = requests.get(f"https://news-api.jtbc.co.kr/v1/get/contents/program/aod-list?programIdx=NG10000002&searchDate={target_dd}")
     down_dd = res.json()["data"][0]['insertDate'][0:10]
     trace(res.json()["data"][0]['audioUrl'])
-    os.chdir(f"/Users/chishum/Works/pythonProjects/toy-project")
+    os.chdir(f"/Users/chishum/PycharmProjects/toy-project")
 
     if not os.path.exists(f"./newsRoom"): os.mkdir(f"./newsRoom")
 
@@ -84,42 +84,42 @@ if __name__ == '__main__':
     trace(f"tag처리 {news_room_file}")
 
     #Use your own values from my.telegram.org
-    api_id = 29192735
-    api_hash = '7da4edb11c97edbc89aca3a033fcb66d'
-    client = TelegramClient('anon', api_id, api_hash)
-
-    async def main():
-        # Getting information about yourself
-        # me = await client.get_me()
-
-        # "me" is a user object. You can pretty-print
-        # any Telegram object with the "stringify" method:
-        # print(me.stringify())
-
-        # When you print something, you see a representation of it.
-        # You can access all attributes of Telegram objects with
-        # the dot operator. For example, to get the username:
-        # username = me.username
-        # print(username)
-        # print(me.phone)
-
-        # You can print all the dialogs/conversations that you are part of:
-        # async for dialog in client.iter_dialogs():
-        #     print(dialog.name, 'has ID', dialog.id)
-
-        # You can send messages to yourself...
-        # await client.send_message('me', 'Hello, myself!')
-        # ...to some chat ID
-        # await client.send_message(-1001293981836, 'Hello, group!')
-        # ...to your contacts
-        #await client.send_message('+34600123123', 'Hello, friend!')
-        # ...or even to any username
-        #await client.send_message('username', 'Testing Telethon!')
-
-        # Or send files, songs, documents, albums...
-        trace("TELEGRAM 전송시작")
-        await client.send_file(-1002377578524, news_room_file, parse_mode="html")
-        trace("END")
-
-    with client:
-        client.loop.run_until_complete(main())
+    # api_id = 29192735
+    # api_hash = '7da4edb11c97edbc89aca3a033fcb66d'
+    # client = TelegramClient('anon', api_id, api_hash)
+    #
+    # async def main():
+    #     # Getting information about yourself
+    #     # me = await client.get_me()
+    #
+    #     # "me" is a user object. You can pretty-print
+    #     # any Telegram object with the "stringify" method:
+    #     # print(me.stringify())
+    #
+    #     # When you print something, you see a representation of it.
+    #     # You can access all attributes of Telegram objects with
+    #     # the dot operator. For example, to get the username:
+    #     # username = me.username
+    #     # print(username)
+    #     # print(me.phone)
+    #
+    #     # You can print all the dialogs/conversations that you are part of:
+    #     # async for dialog in client.iter_dialogs():
+    #     #     print(dialog.name, 'has ID', dialog.id)
+    #
+    #     # You can send messages to yourself...
+    #     # await client.send_message('me', 'Hello, myself!')
+    #     # ...to some chat ID
+    #     # await client.send_message(-1001293981836, 'Hello, group!')
+    #     # ...to your contacts
+    #     #await client.send_message('+34600123123', 'Hello, friend!')
+    #     # ...or even to any username
+    #     #await client.send_message('username', 'Testing Telethon!')
+    #
+    #     # Or send files, songs, documents, albums...
+    #     trace("TELEGRAM 전송시작")
+    #     await client.send_file(-1002377578524, news_room_file, parse_mode="html")
+    #     trace("END")
+    #
+    # with client:
+    #     client.loop.run_until_complete(main())
